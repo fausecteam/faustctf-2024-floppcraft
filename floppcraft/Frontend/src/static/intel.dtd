@@ -1,0 +1,4 @@
+<!ELEMENT dataRoot (formType,intel,topsecret?)>
+<!ELEMENT formType (#PCDATA)>
+<!ELEMENT intel (#PCDATA)>
+<!ELEMENT topsecret (#PCDATA)>

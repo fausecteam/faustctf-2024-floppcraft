@@ -1,0 +1,23 @@
+<form id="dataForm" action="/auth/submitIntel" method="POST">
+    <input type="hidden" name="formType" value="intel"></input>
+    <h1>Submit Intel</h1>
+    <fieldset>
+        <legend>
+            <h3>Intel</h3>
+        </legend>
+        <div class="account-details">
+            <div>
+                <div class="big-text">
+                    <label>Intel</label>
+                    <textarea type="text" name="intel" placeholder="Intel..." required></textarea>
+                </div>
+                <div>
+                    <label>Top Secret</label>
+                    <input type="checkbox" name="topsecret" value="true" class="topsecret-input"></input>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <input class="submit-input" type="submit" href="/" value="Submit">
+</form>
+

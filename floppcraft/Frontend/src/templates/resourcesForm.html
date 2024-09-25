@@ -1,0 +1,32 @@
+    <form id="dataForm" action="/auth/requestResources" method="POST">
+        <input type="hidden" name="formType" value="resources"></input>
+        <h1>Request Ressources</h1>
+        <fieldset>
+            <legend>
+                <h3>Request Details</h3>
+            </legend>
+            <div>
+                <div class="grid">
+                    <div class="grid-fullrow">
+                        <label>Ressource Description</label>
+                    </div>
+                    <div class="grid-fullrow">
+                        <textarea type="text-box" name="description" placeholder="Description..." required></textarea>
+                    </div>
+                    <div class="grid-col1">
+                        <label>Ressource Amount</label>
+                    </div>
+                    <div class="grid-col2">
+                        <input type="text" name="amount" placeholder="amount" required>
+                    </div>
+                    <div class="grid-fullrow">
+                        <label>Request Reason</label>
+                    </div>
+                    <div class="grid-fullrow">
+                        <textarea type="text-box" name="reason" placeholder="Reason..." required></textarea>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <input class="submit-input" type="submit" href="/" value="Submit Request">
+    </form>

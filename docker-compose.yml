@@ -1,0 +1,54 @@
+version: "2.2"
+services:
+  floppcraft-deps:
+    scale: 0
+    image: faust.cs.fau.de:5000/floppcraft-deps
+    build:
+      context: ./deps
+      dockerfile: Dockerfile.deps
+
+  Frontend:
+    restart: unless-stopped
+    image: faust.cs.fau.de:5000/floppcraft
+    init: true
+    build: floppcraft/Frontend
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    
+  KeyServer:
+    restart: unless-stopped
+    image: faust.cs.fau.de:5000/floppcraft-key-server
+    init: true
+    build: floppcraft/KeyServer
+    ports:
+      - "5001"
+    depends_on:
+        postgres:
+          condition: service_healthy
+
+  postgres:
+    restart: unless-stopped
+    image: postgres:16-alpine
+    volumes:
+      - ./data/:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: floppdb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d floppdb"]
+      interval: 10s
+      timeout: 10s
+      retries: 20
+      start_period: 10s
+
+networks:
+  default:
+    enable_ipv6: true
+    ipam:
+        driver: default
+        config:
+            - subnet: "fd42:d0ce:3333::/64"

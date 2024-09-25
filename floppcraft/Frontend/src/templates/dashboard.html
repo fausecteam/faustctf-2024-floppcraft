@@ -1,0 +1,26 @@
+<head>
+	<link rel="stylesheet" href="/static/style.css"/>	
+</head>
+<body>
+	<h1 style="text-align:center;margin-top:10px">Dashboard<h1>
+		<div id="formContainer">
+			<form id="subjectSelector" method="POST">
+				<select onChange="submit();" placeholder="Please select a subject" name="subject" style="background-color:#f1f1f1;border:none;">
+				<option value="" disabled {% if not form %} selected {% endif %}>Select your subject</option>
+				<option value="papers" {% if form == "papers" %} selected {% endif %} >Request new Papers</option>
+				<option value="resources" {% if form == "resources" %} selected {% endif %} >Request Resources</option>
+				<option value="intel" {% if form == "intel" %} selected {% endif %} >Submit Inteligence</option>
+				<option value="location" {% if form == "location" %} selected {% endif %} >Submit Location of Deaddrop</option>
+				</select>
+			</form>
+		</div>
+	{% if form %}
+	<div id="subjectForm">
+	{% if form == "papers" %} {% include "papersForm.html" %} {% endif %}
+	{% if form == "resources" %} {% include "resourcesForm.html" %} {% endif %}
+	{% if form == "intel" %} {% include "intelForm.html" %} {% endif %}
+	{% if form == "location" %} {% include "locationForm.html" %} {% endif %}
+	</div>
+	<script src="/static/script.js"></script>
+	{% endif %}
+</body>

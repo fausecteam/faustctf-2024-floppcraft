@@ -1,0 +1,17 @@
+name: Floppcraft
+slug: floppcraft
+authors:
+  - Flopjang
+
+install:
+  container_images:
+    - faust.cs.fau.de:5000/floppcraft
+    - faust.cs.fau.de:5000/floppcraft-key-server
+    - faust.cs.fau.de:5000/floppcraft-deps
+    - docker.io/postgres:16-alpine
+checker:
+  script_path: checker/checker.py
+  max_duration: 60
+  debian_packages:
+    - python3-requests
+  pip_packages: ["Pillow==9.5.0","requests==2.25.1","pyJWT==2.3.0","wonderwords==2.2.0",]

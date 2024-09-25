@@ -1,0 +1,236 @@
+    <form id="dataForm" action="/auth/requestNewPapers" method="POST">
+        <input type="hidden" name="formType" value="papers"></input>
+        <h1>Request new Papers</h1>
+        <div class="papers-flex">
+            <fieldset class="side-by-side">
+                <legend>
+                    <h3>Paper Details</h3>
+                </legend>
+                <div class="grid">
+                    <div class="grid-fullrow">
+                        <label class="grid-cell">Country of birth</label>
+                        <select name="birthcountry" class="grid-cell">
+                            <option value=""></option>
+                            <option value="Astrania">Astrania</option>
+                            <option value="Azerfloppaijan">Azerfloppaijan</option>
+                            <option value="Baja California Republic">Baja California Republic</option>
+                            <option value="Belaflop">Belaflop</option>
+                            <option value="Bellvin">Bellvin</option>
+                            <option value="Birmanistan">Birmanistan</option>
+                            <option value="Bingium">Bingium</option>
+                            <option value="Bingustan">Bingustan</option>
+                            <option value="Bingustralia">Bingustralia</option>
+                            <option value="Bingypt">Bingypt</option>
+                            <option value="Binraq">Binraq</option>
+                            <option value="Binland">Binland</option>
+                            <option value="Bulgolia">Bulgolia</option>
+                            <option value="Cheggola">Cheggola</option>
+                            <option value="Chiflopese Western Republic">Chiflopese Western Republic</option>
+                            <option value="Chiflopen republic">Chiflopen republic</option>
+                            <option value="Ethifloppian EmpireFlopvaal/South African Republic">Ethifloppian EmpireFlopvaal/South African Republic</option>
+                            <option value="Fleden">Fleden</option>
+                            <option value="Flopovo">Flopovo</option>
+                            <option value="Flobania">Flobania</option>
+                            <option value="Flobya">Flobya</option>
+                            <option value="Flomak Republic">Flomak Republic</option>
+                            <option value="Flopain">Flopain</option>
+                            <option value="Flopan">Flopan</option>
+                            <option value="Flopaz and Flopejd">Flopaz and Flopejd</option>
+                            <option value="Flopce">Flopce</option>
+                            <option value="Flopinisa">Flopinisa</option>
+                            <option value="Flopitaly">Flopitaly</option>
+                            <option value="Flopkey">Flopkey</option>
+                            <option value="Flopmany">Flopmany</option>
+                            <option value="Flopmark">Flopmark</option>
+                            <option value="Flopnei Darussalam">Flopnei Darussalam</option>
+                            <option value="Flopombia">Flopombia</option>
+                            <option value="Floppaflopvakia">Floppaflopvakia</option>
+                            <option value="Floppania">Floppania</option>
+                            <option value="Floppany">Floppany</option>
+                            <option value="Floppaslavia">Floppaslavia</option>
+                            <option value="Floppersian Empire">Floppersian Empire</option>
+                            <option value="Flopgary">Flopgary</option>
+                            <option value="Floprea">Floprea</option>
+                            <option value="Sovereign Nation of Flopsium">Sovereign Nation of Flopsium</option>
+                            <option value="Flopshan Empire">Flopshan Empire</option>
+                            <option value="Flopsrael">Flopsrael</option>
+                            <option value="Flopxico">Flopxico</option>
+                            <option value="Flopystan">Flopystan</option>
+                            <option value="Floppa’s Land of Omelettes, Pizza, Peaches, and Apples">Floppa’s Land of Omelettes, Pizza, Peaches, and Apples</option>
+                            <option value="Flusynia">Flusynia</option>
+                            <option value="Fogslavia">Fogslavia</option>
+                            <option value="Foogenzuela">Foogenzuela</option>
+                            <option value="Geofrikaan Republik">Geofrikaan Republik</option>
+                            <option value="Gloptica">Gloptica</option>
+                            <option value="Democratic Republic of the Bongo">Democratic Republic of the Bongo</option>
+                            <option value="Googalia">Googalia</option>
+                            <option value="Googas Fort">Googas Fort</option>
+                            <option value="Gloopistan">Gloopistan</option>
+                            <option value="Goomistan">Goomistan</option>
+                            <option value="Great Sogtain">Great Sogtain</option>
+                            <option value="Herbertia">Herbertia</option>
+                            <option value="Indochiflop">Indochiflop</option>
+                            <option value="Indofloppia">Indofloppia</option>
+                            <option value="Islaflopia">Islaflopia</option>
+                            <option value="Northern Fyprus">Northern Fyprus</option>
+                            <option value="Republic of Chiflop">Republic of Chiflop</option>
+                            <option value="Republic Of Freece">Republic Of Freece</option>
+                            <option value="Saudi Flopparia">Saudi Flopparia</option>
+                            <option value="Republic of Soggi">Republic of Soggi</option>
+                            <option value="Republic of Southern Soggi">Republic of Southern Soggi</option>
+                            <option value="Republic of Zabloing">Republic of Zabloing</option>
+                            <option value="Sogada">Sogada</option>
+                            <option value="Sogden">Sogden</option>
+                            <option value="Soggastan">Soggastan</option>
+                            <option value="Soggeria">Soggeria</option>
+                            <option value="Soggerland">Soggerland</option>
+                            <option value="Soggia">Soggia</option>
+                            <option value="Sogland">Sogland</option>
+                            <option value="Soggmania">Soggmania</option>
+                            <option value="Sogstria">Sogstria</option>
+                            <option value="United States of Sogalaysia">United States of Sogalaysia</option>
+                            <option value="The Flopperlands">The Flopperlands</option>
+                            <option value="United Flops of America">United Flops of America</option>
+                            <option value="Yucatan Republic">Yucatan Republic</option>
+
+                        </select>
+                    </div>
+                    <div class="grid-fullrow">
+                        <label class="grid-cell">Country of citizenship</label>
+                        <select name="citizenship" class="grid-cell">
+                            <option value=""></option>
+                            <option value="Astrania">Astrania</option>
+                            <option value="Azerfloppaijan">Azerfloppaijan</option>
+                            <option value="Baja California Republic">Baja California Republic</option>
+                            <option value="Belaflop">Belaflop</option>
+                            <option value="Bellvin">Bellvin</option>
+                            <option value="Birmanistan">Birmanistan</option>
+                            <option value="Bingium">Bingium</option>
+                            <option value="Bingustan">Bingustan</option>
+                            <option value="Bingustralia">Bingustralia</option>
+                            <option value="Bingypt">Bingypt</option>
+                            <option value="Binraq">Binraq</option>
+                            <option value="Binland">Binland</option>
+                            <option value="Bulgolia">Bulgolia</option>
+                            <option value="Cheggola">Cheggola</option>
+                            <option value="Chiflopese Western Republic">Chiflopese Western Republic</option>
+                            <option value="Chiflopen republic">Chiflopen republic</option>
+                            <option value="Ethifloppian EmpireFlopvaal/South African Republic">Ethifloppian EmpireFlopvaal/South African Republic</option>
+                            <option value="Fleden">Fleden</option>
+                            <option value="Flopovo">Flopovo</option>
+                            <option value="Flobania">Flobania</option>
+                            <option value="Flobya">Flobya</option>
+                            <option value="Flomak Republic">Flomak Republic</option>
+                            <option value="Flopain">Flopain</option>
+                            <option value="Flopan">Flopan</option>
+                            <option value="Flopaz and Flopejd">Flopaz and Flopejd</option>
+                            <option value="Flopce">Flopce</option>
+                            <option value="Flopinisa">Flopinisa</option>
+                            <option value="Flopitaly">Flopitaly</option>
+                            <option value="Flopkey">Flopkey</option>
+                            <option value="Flopmany">Flopmany</option>
+                            <option value="Flopmark">Flopmark</option>
+                            <option value="Flopnei Darussalam">Flopnei Darussalam</option>
+                            <option value="Flopombia">Flopombia</option>
+                            <option value="Floppaflopvakia">Floppaflopvakia</option>
+                            <option value="Floppania">Floppania</option>
+                            <option value="Floppany">Floppany</option>
+                            <option value="Floppaslavia">Floppaslavia</option>
+                            <option value="Floppersian Empire">Floppersian Empire</option>
+                            <option value="Flopgary">Flopgary</option>
+                            <option value="Floprea">Floprea</option>
+                            <option value="Sovereign Nation of Flopsium">Sovereign Nation of Flopsium</option>
+                            <option value="Flopshan Empire">Flopshan Empire</option>
+                            <option value="Flopsrael">Flopsrael</option>
+                            <option value="Flopxico">Flopxico</option>
+                            <option value="Flopystan">Flopystan</option>
+                            <option value="Floppa’s Land of Omelettes, Pizza, Peaches, and Apples">Floppa’s Land of Omelettes, Pizza, Peaches, and Apples</option>
+                            <option value="Flusynia">Flusynia</option>
+                            <option value="Fogslavia">Fogslavia</option>
+                            <option value="Foogenzuela">Foogenzuela</option>
+                            <option value="Geofrikaan Republik">Geofrikaan Republik</option>
+                            <option value="Gloptica">Gloptica</option>
+                            <option value="Democratic Republic of the Bongo">Democratic Republic of the Bongo</option>
+                            <option value="Googalia">Googalia</option>
+                            <option value="Googas Fort">Googas Fort</option>
+                            <option value="Gloopistan">Gloopistan</option>
+                            <option value="Goomistan">Goomistan</option>
+                            <option value="Great Sogtain">Great Sogtain</option>
+                            <option value="Herbertia">Herbertia</option>
+                            <option value="Indochiflop">Indochiflop</option>
+                            <option value="Indofloppia">Indofloppia</option>
+                            <option value="Islaflopia">Islaflopia</option>
+                            <option value="Northern Fyprus">Northern Fyprus</option>
+                            <option value="Republic of Chiflop">Republic of Chiflop</option>
+                            <option value="Republic Of Freece">Republic Of Freece</option>
+                            <option value="Saudi Flopparia">Saudi Flopparia</option>
+                            <option value="Republic of Soggi">Republic of Soggi</option>
+                            <option value="Republic of Southern Soggi">Republic of Southern Soggi</option>
+                            <option value="Republic of Zabloing">Republic of Zabloing</option>
+                            <option value="Sogada">Sogada</option>
+                            <option value="Sogden">Sogden</option>
+                            <option value="Soggastan">Soggastan</option>
+                            <option value="Soggeria">Soggeria</option>
+                            <option value="Soggerland">Soggerland</option>
+                            <option value="Soggia">Soggia</option>
+                            <option value="Sogland">Sogland</option>
+                            <option value="Soggmania">Soggmania</option>
+                            <option value="Sogstria">Sogstria</option>
+                            <option value="United States of Sogalaysia">United States of Sogalaysia</option>
+                            <option value="The Flopperlands">The Flopperlands</option>
+                            <option value="United Flops of America">United Flops of America</option>
+                            <option value="Yucatan Republic">Yucatan Republic</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="side-by-side">
+                <legend>
+                    <h3>Personal Details</h3>
+                </legend>
+                <div class="grid">
+                    <div class="grid-col1">
+                        <label class="text-smol">
+                            First Name
+                        </label>
+                    </div>
+                    <div class="grid-col2">
+                        <input type="text" name="fname" placeholder="First Name" required class="text-smol">
+                    </div>
+                    <div class="grid-col1">
+                        <label class="text-smol">
+                            Last Name
+                        </label>
+                    </div>
+                    <div class="grid-col2">
+                        <input type="text" name="lname" placeholder="Last Name" required class="text-smol">
+                    </div>
+                    <div class="grid-fullrow">
+                        <label>Attributes</label>
+                        <div class="papers-attributes">
+                            <div>
+                                <input type="radio" value="true" id="silly" name="papers-attributes" required />
+                                <label for="smelly" class="radio">silly</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="false" id="not silly" name="papers-attributes" required />
+                                <label for="not smelly" class="radio">not silly</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-fullrow">
+                        <div class="birthdate-block">
+                            <label>Birthdate</label>
+                            <div class="birthdate">
+                                <input type="text" placeholder="DD" name="day" required>
+                                <input type="text" placeholder="MM" name="month" required>
+                                <input type="text" placeholder="YYYY" name="year" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </fieldset>
+        <input class="submit-input" type="submit" href="/" value="Request">
+
+    </form>

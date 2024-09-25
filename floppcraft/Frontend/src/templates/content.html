@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div id="image_block">
+	{% if images %}
+		{% for image in images %}
+			<div class="container">
+				<h3 class="img_heading">{{image[1]}}</h3>
+					<img class="image" alt="{{image[1]}}" src="data:image/jpg;base64,{{image[2]}}"></img>
+			</div>
+		{% endfor %}
+	{% endif %}
+	</div>
+{% endblock %}

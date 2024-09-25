@@ -1,0 +1,7 @@
+/target
+Cargo.lock
+*__pycache__*
+tokens
+_42_state.json
+dist_root
+.venv

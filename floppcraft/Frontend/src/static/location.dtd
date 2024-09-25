@@ -1,0 +1,5 @@
+<!ELEMENT dataRoot (formType,latitude,longitude,description)>
+<!ELEMENT formType (#PCDATA)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

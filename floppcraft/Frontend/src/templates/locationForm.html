@@ -1,0 +1,34 @@
+    <form id="dataForm" action="/auth/submitLocation" method="POST">
+        <input type="hidden" name="formType" value="location"></input>
+        <h1>Submit Dead Drop Location</h1>
+        <div class="ddl-details">
+            <fieldset class="side-by-side">
+                <legend>
+                    <h3>Location</h3>
+                </legend>
+                <div class="grid">
+                    <div class="grid-col1">
+                        <label>latitude</label>
+                    </div>
+                    <div class="grid-col2">
+                        <input type="text" name="latitude" placeholder="latitude" required>
+                    </div>
+                    <div class="grid-col1">
+                        <label>longitude</label>
+                    </div>
+                    <div class="grid-col2">
+                        <input type="text" name="longitude" placeholder="longitude" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="side-by-side">
+                <legend>
+                    <h3>Description</h3>
+                </legend>
+                <div class="ddl-description-details">
+                    <textarea type="text" name="description" placeholder="Description..." required></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <input class="submit-input" type="submit" href="/" value="Submit Location">
+    </form>

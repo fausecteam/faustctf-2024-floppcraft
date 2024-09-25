@@ -1,0 +1,403 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body:has(> div#form_block) {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#header {
+	display: grid;
+	background-color: black;
+	min-height: 10vh;
+	width: 96vw;
+	z-index: 200;
+	margin: 2vh 2vw 2vh 2vw;
+	border-radius: 14px;
+	top: 2vh;
+	position: fixed;
+	grid-template-rows: 10vh;
+}
+
+#header>.row {
+	text-align: center;
+	grid-row: 1;
+	height: 100%;
+	color: darkred;
+	font-size: 8vh;
+}
+
+#header>.row>#logo {
+	color: darkred;
+	text-decoration: none;
+}
+
+#header>.row>.links {
+	color: purple;
+	text-decoration: none;
+}
+
+
+#footer {
+	opacity: 80%;
+	background-color: black;
+	color: darkred;
+	min-height: 10vh;
+	width: 100vw;
+	z-index: 3;
+	margin: 0;
+	border-radius: 30px 30px 0px 0px;
+	bottom: 0;
+	position: fixed;
+	text-decoration: none;
+	text-align: center;
+}
+
+.container {
+	display: inline-block;
+	max-height: 400px;
+	min-height: 400px;
+	max-width: 300px;
+	min-width: 300px;
+	margin: 2vh 1vw 2vh 1vw;
+	vertical-align: top;
+}
+
+.image {
+	object-fit: contain;
+	width: 300px;
+	height: 300px;
+	max-height: 300px;
+	min-height: 300px;
+	max-height: 300px;
+	max-height: 300px;
+}
+
+#image_block {
+	vertical-align: top;
+	text-align: center;
+	width: 100%;
+	margin: 15vh 0 0 0;
+}
+
+#form_block {
+	text-align: center;
+	width: 100%;
+	margin: 20vh 0 0 0;
+	overflow: hidden;
+}
+
+.upload-form {
+ margin: 40px auto;
+ padding: 20px;
+ background-color: \#f9f9f9;
+ border: 1px solid \#ddd;
+}
+
+.upload-form fieldset {
+ border: none;
+ padding: 0;
+ margin: 0;
+}
+
+.upload-form div {
+ margin-bottom: 20px;
+}
+
+.image_input {
+ width: 100%;
+ height: 40px;
+ padding: 10px;
+ font-size: 16px;
+ border-radius:20px;
+ border: 1px solid \#ccc;
+}
+
+.image_input:focus {
+ border-color: \#aaa;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+\#submit {
+ background-color: \#4CAF50;
+ color: \#fff;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+}
+
+\#submit:hover {
+ background-color: \#3e8e41;
+}
+
+\#submit:active {
+ background-color: \#4CAF50;
+ transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+ .upload-form {
+ max-width: 300px;
+ }
+}
+
+@media (max-width: 480px) {
+ .upload-form {
+ max-width: 200px;
+ }
+ .image_input {
+ height: 30px;
+ }
+ \#submit {
+ padding: 5px 10px;
+ }
+}image_input[type=text],
+input[type=file] {
+	width: 100%;
+	padding: 2% 2%;
+	margin: 2% 2%;
+	display: inline-block;
+	border: 0.2% solid #ccc;
+	border-radius: 1%;
+	box-sizing: border-box;
+	align-self: center;
+}
+
+.image_input[type=submit] {
+	width: 100%;
+	background-color: darkred;
+	color: white;
+	padding: 2% 3%;
+	margin: 1% 0;
+	border: none;
+	cursor: pointer;
+}
+
+.image_input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+#image_form {
+	border-radius: 2%;
+	background-color: #f2f2f2;
+	padding: 2vw;
+	margin: 10vw 30vw 10vw 30vw;
+}
+
+#subjectForm{
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+#formContainer {
+	width: 100%;
+	height: 20%;
+	margin: 40px 0 40px 0;
+	text-align: center;
+}
+
+#subjectSelector {
+	width: 70%;
+	height: 100%;
+	align-content: center;
+	display: inline-block
+}
+
+#subjectSelector>select {
+
+	width: 100%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+/*
+input[type="submit"] {
+	width: 100%;
+	height: 45px;
+	margin-top: 1vh;
+	background: #bf5142;
+	border-radius: 10vw;
+	border: 2px solid #550f06;
+	font-size: x-large;
+}
+
+input[type="submit"]:hover {
+	background: #bb2020;
+}
+
+fieldset {
+	border: 2px dashed #bf5142;
+}
+
+textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+	min-height: 100px;
+}
+
+.ddl-details,
+.papers-flex {
+	display: flex;
+}
+
+.side-by-side {
+	width: 45%;
+	margin-left: 2.5%;
+}
+
+select {
+	width: 98%;
+	margin-left: 2vw;
+}
+
+.grid {
+	margin-top: 2vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 13% auto;
+}
+
+.papers-attributes {
+	margin-top: 2vh;
+}
+
+.grid-col1 {
+	margin-top: 2vh;
+	text-align: left;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.grid-col2 {
+	margin-top: 2vh;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.grid-fullrow {
+	margin-top: 2vh;
+	text-align: left;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.text-smol {
+	width: 169px;
+	text-align: left;
+	margin-left: 2vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+.birthdate>input {
+	width: 5%;
+}
+
+.ddl-description-details {
+	height: 100%;
+} */
+/* Submit button */
+input[type="submit"] {
+	width: 100%;
+	height: 45px;
+	margin-top: 1vh;
+	background: #bf5142;
+	border-radius: 10vw;
+	border: 2px solid #550f06;
+	font-size: x-large;
+}
+
+input[type="submit"]:hover {
+	background: #bb2020;
+}
+
+/* Fieldset */
+fieldset {
+	border: 2px dashed #bf5142;
+}
+
+/* Textarea */
+textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+	min-height: 100px;
+}
+
+/* Flex container */
+.ddl-details,
+.papers-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Flex item */
+.side-by-side {
+	width: 100%; /* Use full width on all devices */
+	margin-left: 0;
+}
+
+/* Select */
+select {
+	width: 100%; /* Use full width */
+	margin-left: 0;
+}
+
+/* Grid container */
+.grid {
+	margin-top: 2vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+	grid-gap: 20px; /* Add some space between grid items */
+}
+
+/* Grid columns */
+.grid-col1,
+.grid-col2 {
+	margin-top: 0; /* Remove margin-top */
+	text-align: left;
+}
+
+/* Full row grid item */
+.grid-fullrow {
+	margin-top: 2vh;
+	text-align: left;
+	grid-column: 1 / -1; /* Span the full width */
+}
+
+/* Text small */
+.text-smol {
+	width: 30%; /* Use full width */
+	text-align: left;
+	margin-left: 0;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+/* Birthdate input */
+.birthdate>input {
+	width: 4%; /* Use full width */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000; /* Border around the table */
+  max-width: 100%; /* Ensure the table does not overflow the window width */
+  word-break: break-all; /* Break words if necessary to fit content within the table */
+}
+
+th, td {
+  border: 1px solid #000; /* Borders around table headers and data cells */
+  padding: 8px;
+  text-align: left;
+  min-width: 7vw;
+}

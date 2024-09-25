@@ -1,0 +1,10 @@
+<!ELEMENT dataRoot (formType,birthcountry,citizenship,fname,lname,papers-attributes,day,month,year)>
+<!ELEMENT formType (#PCDATA)>
+<!ELEMENT birthcountry (#PCDATA)>
+<!ELEMENT citizenship (#PCDATA)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT papers-attributes (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>

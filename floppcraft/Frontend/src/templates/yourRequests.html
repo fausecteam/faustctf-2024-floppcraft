@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<h1>Your Requests</h1>
+	<table>
+		<tr>
+			<th>Request</th>
+			<th>Status</th>
+		</tr>
+		{% for request in requests %}
+			<tr>
+				<td>{{ request[0] }}</td>
+				<td>{{ request[1] }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</body>
+

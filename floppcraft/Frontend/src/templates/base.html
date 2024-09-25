@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<head>
+	<link rel="stylesheet" href="/static/style.css"/>	
+</head>
+<body>
+	<div id="header">
+		<div class="row"><a href="/" id="logo" >Floppcraft<a></div>
+		<div class="row"><a href="/cat" class="links">Cats</a></div>
+		<div class="row"><a href="/dog" class="links">Dogs</a></div>
+		<div class="row"><a href="/silly" class="links">Silly</a></div>
+		<div class="row"><a href="/moon" class="links">Moon</a></div>
+	</div>
+	{% block content %}{% endblock %}
+	<a href="/upload" id="footer"><h1>Upload your own Pictures :)</h1></a>	
+</body>

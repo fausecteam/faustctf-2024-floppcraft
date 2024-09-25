@@ -1,0 +1,5 @@
+<!ELEMENT dataRoot (formType,description,amount,reason)>
+<!ELEMENT formType (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
+<!ELEMENT reason (#PCDATA)>

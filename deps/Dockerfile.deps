@@ -1,0 +1,6 @@
+FROM python:3.10-slim as build
+
+COPY requirements_frontend.txt .
+COPY requirements_keyserver.txt .
+RUN python3 -m pip install --no-cache-dir -r requirements_frontend.txt
+RUN python3 -m pip install --no-cache-dir -r requirements_keyserver.txt
